@@ -1,0 +1,48 @@
+h1 {
+    color: white;
+	text-shadow: black 1px 0px 10px;
+    background: linear-gradient(0.25turn,white,#111111);
+}
+
+
+h2 {
+    color: orange;
+}
+
+div#zentai{
+    border: 3px black solid;
+    background-color: #eeeeee;
+}
+
+h3 {
+	margin: 5px;
+	color: blue;
+	background: linear-gradient(0.25turn, white,#ffefaf);
+}
+
+div#katamari{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 220px 220px;
+	grid-gap: 10px;
+	
+	width: 1024px;
+}
+
+div#katamari > div {
+	background-color: #ffefaf;
+    padding: 10px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
