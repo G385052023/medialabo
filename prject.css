@@ -6,18 +6,8 @@ table {
     background-color: #eeeeee;
   }
   
-  th,
-  td {
+  th,td {
     padding: 20px;
-  }
-
-  html {
-    font-family: "helvetica neue", helvetica, arial, sans-serif;
-  }
-  
-  thead th,
-  tfoot th {
-    font-family: "Rock Salt", cursive;
   }
   
   th {
@@ -30,10 +20,6 @@ table {
   
   tbody td {
     text-align: center;
-  }
-  
-  tfoot th {
-    text-align: right;
   }
 
   tbody tr:nth-child(odd) {
