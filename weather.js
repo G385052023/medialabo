@@ -26,7 +26,42 @@ function showSelectResult() {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let body = document.querySelector('body');
+  let result = document.createElement('div');
+  body.insertAdjacentElement('beforeend',result);
 
+  let h2 = document.createElement('h2');
+  result.insertAdjacentElement('beforeend',h2);
+  h2.textContent = '結果'
+
+  let table = document.createElement('table'); 
+  result.insertAdjacentElement('beforeend',table);
+
+  let tr = document.createElement('tr');
+  table.insertAdjacentElement('beforeend',tr);
+  let th = document.createElement('th');
+  tr.insertAdjacentElement('beforeend',th);
+  th.textContent = '項目';
+  th = document.createElement('th');
+  tr.insertAdjacentElement('beforeend',th);
+  th.textContent = '結果';
+
+  createTr(table,'都市名',data.name);
+  createTr(table,'天気',data.weather[0].description);
+  createTr(table,'最高気温',data.main.temp_max);
+  createTr(table,'最低気温',data.main.temp_min);
+  createTr(table,'湿度',data.main.humidity);
+}
+
+function createTr(table,thName, dataName) {
+  let tr = document.createElement('tr');
+  table.insertAdjacentElement('beforeend',tr);
+  let th = document.createElement('th');
+  tr.insertAdjacentElement('beforeend',th);
+  th.textContent = thName;
+  let td = document.createElement('td');
+  tr.insertAdjacentElement('beforeend',td);
+  td.textContent = dataName;
 }
 
 // 課題5-1 のイベントハンドラの定義
