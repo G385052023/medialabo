@@ -2,6 +2,10 @@ html {
   background-color: silver;
 }
 
+h2 {
+  text-align: center;
+}
+
 label {
   font-family: monospace;
 }
